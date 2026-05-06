@@ -1,6 +1,6 @@
 {
-  "exportTime": "2026/5/7 00:52:55",
-  "version": 1778086375036,
+  "exportTime": "2026/5/7 00:54:48",
+  "version": 1778086488655,
   "projects": [
     {
       "name": "西建天茂序",
@@ -1084,33 +1084,33 @@
     },
     {
       "name": "张立杰",
+      "branch": "西安第四事业部",
       "position": "",
-      "department": "暖通室",
+      "department": "西安第四事业部",
       "phone": "",
       "email": "",
       "note": "",
-      "id": "mn2uiblc318i",
-      "createTime": "2026/3/23 15:09:39"
+      "id": "mn2uiblc318i"
     },
     {
       "name": "李志鹏",
+      "branch": "西安第四事业部",
       "position": "",
-      "department": "暖通室",
+      "department": "西安第四事业部",
       "phone": "",
       "email": "",
       "note": "",
-      "id": "mn2ui6xc8nxm",
-      "createTime": "2026/3/23 15:09:33"
+      "id": "mn2ui6xc8nxm"
     },
     {
       "name": "冯永斌",
+      "branch": "西安第四事业部",
       "position": "",
-      "department": "暖通室",
+      "department": "西安第四事业部",
       "phone": "",
       "email": "",
       "note": "",
-      "id": "mn2uhyrxkfvj",
-      "createTime": "2026/3/23 15:09:22"
+      "id": "mn2uhyrxkfvj"
     }
   ],
   "branches": [
