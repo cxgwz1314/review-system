@@ -1,6 +1,6 @@
 {
-  "exportTime": "2026/5/7 00:04:08",
-  "version": 1778083448322,
+  "exportTime": "2026/5/7 00:09:58",
+  "version": 1778083798367,
   "projects": [],
   "plans": [],
   "points": [],
@@ -8,19 +8,18 @@
   "branches": [],
   "accounts": [
     {
-      "id": "acc_default_admin",
       "username": "admin",
-      "passwordHash": "__default__admin123__",
-      "realname": "管理员",
+      "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "realname": "程晓光",
       "role": "admin",
       "department": "IT",
-      "note": "默认账户，请修改密码",
-      "createTime": "2026/5/6 23:07:33"
+      "note": "",
+      "id": "acc_default_admin"
     },
     {
       "username": "chengxiaoguang",
       "passwordHash": "c6c831e70e36be195d395913f346c521d825b67930f23b6006989a6de970068f",
-      "realname": "程晓光",
+      "realname": "ç¨æå",
       "role": "user",
       "department": "",
       "note": "",
