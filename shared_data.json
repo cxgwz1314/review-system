@@ -1,6 +1,6 @@
 {
-  "exportTime": "2026/5/7 00:03:30",
-  "version": 1778083410656,
+  "exportTime": "2026/5/7 00:04:08",
+  "version": 1778083448322,
   "projects": [],
   "plans": [],
   "points": [],
@@ -16,6 +16,16 @@
       "department": "IT",
       "note": "默认账户，请修改密码",
       "createTime": "2026/5/6 23:07:33"
+    },
+    {
+      "username": "chengxiaoguang",
+      "passwordHash": "c6c831e70e36be195d395913f346c521d825b67930f23b6006989a6de970068f",
+      "realname": "程晓光",
+      "role": "user",
+      "department": "",
+      "note": "",
+      "id": "mou8z32b69am",
+      "createTime": "2026/5/7 00:04:05"
     }
   ]
 }
