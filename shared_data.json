@@ -1,0 +1,21 @@
+{
+  "exportTime": "2026/5/7 00:03:30",
+  "version": 1778083410656,
+  "projects": [],
+  "plans": [],
+  "points": [],
+  "members": [],
+  "branches": [],
+  "accounts": [
+    {
+      "id": "acc_default_admin",
+      "username": "admin",
+      "passwordHash": "__default__admin123__",
+      "realname": "管理员",
+      "role": "admin",
+      "department": "IT",
+      "note": "默认账户，请修改密码",
+      "createTime": "2026/5/6 23:07:33"
+    }
+  ]
+}
