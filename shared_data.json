@@ -1,6 +1,6 @@
 {
-  "exportTime": "2026/5/7 00:36:51",
-  "version": 1778085411000,
+  "exportTime": "2026/5/7 00:37:51",
+  "version": 1778085471741,
   "projects": [
     {
       "name": "西建天茂序",
@@ -1064,53 +1064,53 @@
     },
     {
       "name": "王莹",
+      "branch": "西安第四事业部",
       "position": "",
-      "department": "暖通室",
+      "department": "西安第四事业部",
       "phone": "",
       "email": "",
       "note": "",
-      "id": "mn2uijouul47",
-      "createTime": "2026/3/23 15:09:49"
+      "id": "mn2uijouul47"
     },
     {
       "name": "程晓光",
+      "branch": "西安第四事业部",
       "position": "",
-      "department": "暖通室",
+      "department": "西安第四事业部",
       "phone": "",
       "email": "",
       "note": "",
-      "id": "mn2uifyfzv06",
-      "createTime": "2026/3/23 15:09:45"
+      "id": "mn2uifyfzv06"
     },
     {
       "name": "张立杰",
+      "branch": "西安第四事业部",
       "position": "",
-      "department": "暖通室",
+      "department": "西安第四事业部",
       "phone": "",
       "email": "",
       "note": "",
-      "id": "mn2uiblc318i",
-      "createTime": "2026/3/23 15:09:39"
+      "id": "mn2uiblc318i"
     },
     {
       "name": "李志鹏",
+      "branch": "西安第四事业部",
       "position": "",
-      "department": "暖通室",
+      "department": "西安第四事业部",
       "phone": "",
       "email": "",
       "note": "",
-      "id": "mn2ui6xc8nxm",
-      "createTime": "2026/3/23 15:09:33"
+      "id": "mn2ui6xc8nxm"
     },
     {
       "name": "冯永斌",
+      "branch": "西安第四事业部",
       "position": "",
-      "department": "暖通室",
+      "department": "西安第四事业部",
       "phone": "",
       "email": "",
       "note": "",
-      "id": "mn2uhyrxkfvj",
-      "createTime": "2026/3/23 15:09:22"
+      "id": "mn2uhyrxkfvj"
     }
   ],
   "branches": [
@@ -1178,6 +1178,36 @@
       "department": "",
       "note": "",
       "id": "mou8z32b69am"
+    },
+    {
+      "username": "杨定伟",
+      "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "realname": "杨定伟",
+      "role": "user",
+      "department": "西安第四事业部",
+      "note": "",
+      "id": "moua62akukbu",
+      "createTime": "2026/5/7 00:37:30"
+    },
+    {
+      "username": "侯幸",
+      "passwordHash": "ed4e5b969e94cbb3a9aeba205fa51ad66ad316e40121e4032c686c501d0549dc",
+      "realname": "侯幸",
+      "role": "user",
+      "department": "西安第四事业部",
+      "note": "",
+      "id": "moua6b3cygpe",
+      "createTime": "2026/5/7 00:37:41"
+    },
+    {
+      "username": "李云飞",
+      "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "realname": "李云飞",
+      "role": "user",
+      "department": "西安第四事业部",
+      "note": "",
+      "id": "moua6gcdu5i1",
+      "createTime": "2026/5/7 00:37:48"
     }
   ]
 }
