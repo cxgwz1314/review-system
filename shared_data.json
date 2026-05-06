@@ -1,6 +1,6 @@
 {
-  "exportTime": "2026/5/7 00:51:39",
-  "version": 1778086299597,
+  "exportTime": "2026/5/7 00:51:47",
+  "version": 1778086307333,
   "projects": [
     {
       "name": "西建天茂序",
@@ -1111,6 +1111,24 @@
     }
   ],
   "branches": [
+    {
+      "name": "西安第三事业部",
+      "manager": "",
+      "phone": "",
+      "city": "",
+      "note": "",
+      "id": "mouaod3bvqqz",
+      "createTime": "2026/5/7 00:51:44"
+    },
+    {
+      "name": "西安第一事业部",
+      "manager": "",
+      "phone": "",
+      "city": "",
+      "note": "",
+      "id": "mouaoae2lvq6",
+      "createTime": "2026/5/7 00:51:40"
+    },
     {
       "name": "西安第四事业部",
       "manager": "",
