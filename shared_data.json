@@ -1,10 +1,1115 @@
 {
-  "exportTime": "2026/5/7 00:09:58",
-  "version": 1778083798367,
-  "projects": [],
-  "plans": [],
-  "points": [],
-  "members": [],
+  "exportTime": "2026/5/7 00:14:22",
+  "version": 1778084062248,
+  "projects": [
+    {
+      "name": "西建天茂序",
+      "manager": "张立杰",
+      "subProjects": "1#7#8#13#",
+      "status": "进行中",
+      "progress": "",
+      "startDate": "2026-03-23",
+      "endDate": "2026-03-31",
+      "reviewItems": "1#7#8#13#",
+      "reviewers": "",
+      "reviewBoard": "加压送风系统，通风排烟系统，设备房通风系统，供暖系统，防火阀专项，剪力墙留洞，站房专项",
+      "note": "校审实施版",
+      "id": "mn2xfgyjpzyl",
+      "createTime": "2026/3/23 16:31:25"
+    },
+    {
+      "name": "浐灞116项目",
+      "manager": "李志鹏",
+      "subProjects": "全子项",
+      "status": "进行中",
+      "progress": "",
+      "startDate": "2026-03-23",
+      "endDate": "2026-03-31",
+      "reviewItems": "全子项",
+      "reviewers": "",
+      "reviewBoard": "加压送风系统，通风排烟系统，设备房通风系统，供暖系统，防火阀专项，剪力墙留洞，站房专项",
+      "note": "校审实施版",
+      "id": "mn2xduetsodf"
+    },
+    {
+      "name": "柳岸华都六期项目",
+      "manager": "李志鹏",
+      "subProjects": "11#12#13#,S7#。15#17#18#19#20#21#22#，S5#",
+      "status": "进行中",
+      "progress": "",
+      "startDate": "2026-03-23",
+      "endDate": "2026-03-27",
+      "reviewItems": "11#12#13#,S7#。15#17#18#19#20#21#22#，S5#",
+      "reviewers": "",
+      "reviewBoard": "加压送风系统，通风排烟系统，设备房通风系统，供暖系统，防火阀专项，剪力墙留洞，站房专项",
+      "note": "校审报建版",
+      "id": "mn2xche6v9b1",
+      "createTime": "2026/3/23 16:29:05"
+    },
+    {
+      "name": "陕西旺园会展中心项目",
+      "manager": "程晓光",
+      "status": "进行中",
+      "progress": "",
+      "startDate": "2026-03-23",
+      "endDate": "2026-03-31",
+      "reviewItems": "1~13#、S1~S4、地下室、会所",
+      "reviewers": "冯永斌、李志鹏、程晓光、张立杰",
+      "reviewBoard": "常规校审",
+      "note": "实施版、报建版均要校审",
+      "id": "mn2u3c0aqd4a"
+    }
+  ],
+  "plans": [
+    {
+      "name": "专项校审",
+      "project": "浐灞116项目",
+      "subProjects": "地下室",
+      "category": "专项校审",
+      "board": "剪力墙留洞",
+      "reviewers": [
+        "杨定伟"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "",
+      "note": "剪力墙留洞",
+      "id": "mn2z4vz2gb9x",
+      "createTime": "2026/3/23 17:19:10"
+    },
+    {
+      "name": "专项校审",
+      "project": "浐灞116项目",
+      "subProjects": "地下室",
+      "category": "专项校审",
+      "board": "防火阀",
+      "reviewers": [
+        "李云飞"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "",
+      "note": "防火阀",
+      "id": "mn2z3mpyzcer",
+      "createTime": "2026/3/23 17:18:12"
+    },
+    {
+      "name": "专项校审",
+      "project": "浐灞116项目",
+      "subProjects": "地下室",
+      "category": "专项校审",
+      "board": "采暖系统、换热站",
+      "reviewers": [
+        "冯永斌"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "",
+      "note": "采暖系统、换热站",
+      "id": "mn2z2k01svrv",
+      "createTime": "2026/3/23 17:17:21"
+    },
+    {
+      "name": "专项校审",
+      "project": "浐灞116项目",
+      "subProjects": "地下室",
+      "category": "专项校审",
+      "board": "设备房通风系统",
+      "reviewers": [
+        "侯幸"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "",
+      "note": "设备房通风系统",
+      "id": "mn2z1k9hju8i",
+      "createTime": "2026/3/23 17:16:35"
+    },
+    {
+      "name": "专项校审",
+      "project": "浐灞116项目",
+      "subProjects": "地下室",
+      "category": "专项校审",
+      "board": "通风排烟系统",
+      "reviewers": [
+        "程晓光"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "通风排烟系统",
+      "id": "mn2z0p480c14",
+      "createTime": "2026/3/23 17:15:55"
+    },
+    {
+      "name": "专项校审",
+      "project": "浐灞116项目",
+      "subProjects": "地下室",
+      "category": "专项校审",
+      "board": "加压送风系统",
+      "reviewers": [
+        "张立杰"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "加压送风系统",
+      "id": "mn2yzlt0fo5s",
+      "createTime": "2026/3/23 17:15:04"
+    },
+    {
+      "name": "专项校审",
+      "project": "浐灞116项目",
+      "subProjects": "配套(S1~S10#)",
+      "category": "专项校审",
+      "board": "品质类、重大重要、排烟、外立面留洞",
+      "reviewers": [
+        "程晓光",
+        "张立杰"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "品质类、重大重要、排烟、外立面留洞",
+      "id": "mn2yx2fpkej9"
+    },
+    {
+      "name": "专项校审",
+      "project": "浐灞116项目",
+      "subProjects": "T1户型(6#8#10#12#)",
+      "category": "专项校审",
+      "board": "品质类问题、重大重要问题、防排烟、空调套管",
+      "reviewers": [
+        "王莹",
+        "张立杰"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "品质类问题、重大重要问题、防排烟、空调套管",
+      "id": "mn2yu8q31o62"
+    },
+    {
+      "name": "校审",
+      "project": "浐灞116项目",
+      "subProjects": "T2户型 (1-5,7,,9, 11,13~16#)",
+      "category": "专项校审",
+      "board": "品质类问题、重大重要问题、防排烟、空调套管",
+      "reviewers": [
+        "程晓光",
+        "冯永斌"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "品质类问题、重大重要问题、防排烟、空调套管",
+      "id": "mn2ysyb4e9c9",
+      "createTime": "2026/3/23 17:09:53"
+    },
+    {
+      "name": "11#12#13#,S7#。15#17#18#19#20#21#22#，S5#",
+      "project": "柳岸华都六期项目",
+      "subProjects": "11#12#13#,S7#。15#17#18#19#20#21#22#，S5#",
+      "category": "专项校审",
+      "board": "防排烟系统、空调套管",
+      "reviewers": [
+        "王莹",
+        "冯永斌"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "防排烟系统、空调套管",
+      "id": "mn2yeb5uiesb"
+    },
+    {
+      "name": "11#12#13#,S7#。15#17#18#19#20#21#22#，S5#",
+      "project": "柳岸华都六期项目",
+      "subProjects": "11#12#13#,S7#。15#17#18#19#20#21#22#，S5#",
+      "category": "专项校审",
+      "board": "品质类问题",
+      "reviewers": [
+        "程晓光",
+        "张立杰"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "品质类问题",
+      "id": "mn2y24eiwqfe"
+    },
+    {
+      "name": "1#7#8#13#",
+      "project": "西建天茂序",
+      "subProjects": "1#7#8#13#",
+      "category": "专项校审",
+      "board": "空调套管",
+      "reviewers": [
+        "程晓光",
+        "李志鹏",
+        "冯永斌"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "空调套管",
+      "id": "mn2xnnd8750a"
+    },
+    {
+      "name": "1#7#8#13#",
+      "project": "西建天茂序",
+      "subProjects": "1#7#8#13#",
+      "category": "专项校审",
+      "board": "品质类问题",
+      "reviewers": [
+        "程晓光",
+        "李志鹏",
+        "冯永斌"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "品质类问题",
+      "id": "mn2xm6olixxq"
+    },
+    {
+      "name": "校审",
+      "project": "陕西旺园会展中心项目",
+      "subProjects": "全子项",
+      "category": "常规校审",
+      "board": "校核",
+      "reviewers": [
+        "程晓光"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "外审版、实施版",
+      "id": "mn2uwk9o8ygv"
+    },
+    {
+      "name": "校审",
+      "project": "陕西旺园会展中心项目",
+      "subProjects": "全子项",
+      "category": "常规校审",
+      "board": "校对",
+      "reviewers": [
+        "张立杰"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "外审版、实施版",
+      "id": "mn2uw5vybz13"
+    },
+    {
+      "name": "校审",
+      "project": "陕西旺园会展中心项目",
+      "subProjects": "全子项",
+      "category": "常规校审",
+      "board": "审核",
+      "reviewers": [
+        "李志鹏"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "外审版、实施版",
+      "id": "mn2uvkr42gfr"
+    },
+    {
+      "name": "校审",
+      "project": "陕西旺园会展中心项目",
+      "subProjects": "全子项",
+      "category": "常规校审",
+      "board": "审定",
+      "reviewers": [
+        "冯永斌"
+      ],
+      "date": "2026-03-31",
+      "status": "进行中",
+      "round": "第1轮",
+      "note": "外审版、实施版",
+      "id": "mn2u4j6dmrss"
+    }
+  ],
+  "points": [
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "无障碍设施",
+      "checklist": "无障碍卫生间内所有的无障碍设施安装高度、安装位置应满足无障碍使用人群方便使用，如低位挂衣钩安装高度不得大于1.20m，无障碍坐便器L型扶手距其中心不应大于0.45m，水平扶手距其中心不应大于0.35m",
+      "note": "",
+      "id": "mn38oz7p0cy9"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "设备设施",
+      "checklist": "建筑内人员可经常经过或到达的区域内，设置的集水坑应避免采用常规大格栅盖板，首选现浇板+小检修口做法，减少对后期地面装修的影响",
+      "note": "",
+      "id": "mn38oz7pn7mw"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "设备设施",
+      "checklist": "设置在电梯厅等空间内转角处的防火卷帘，应注意防火卷帘盒的安装类型，不应出现卷帘盒之间在转角处产生冲突",
+      "note": "",
+      "id": "mn38oz7pucvd"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "设备设施",
+      "checklist": "当设备机房的疏散门内开时，该疏散门与设备机房内的设备基础之间应预留满足规范要求的人员检修、通行的宽度",
+      "note": "",
+      "id": "mn38oz7pbhpl"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "外立面",
+      "checklist": "外墙上的雨篷、平台、花池等应考虑防水防渗措施",
+      "note": "",
+      "id": "mn38oz7pr6i5"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "室外空间",
+      "checklist": "首层风井、各类出入口、坡道等，应结合立面水平线条等元素进行美学设计；对于二次深化范畴的内容应做满足功能性要求的尺寸约束",
+      "note": "",
+      "id": "mn38oz7pujfa"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "室外空间",
+      "checklist": "地下室排风井开口不得面向首层赠送庭院，雨污水检修井不应布置在首层赠送庭院内",
+      "note": "",
+      "id": "mn38oz7o3fql"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "室外空间",
+      "checklist": "为避免积水，单元主要出入口及无障碍坡道室外低侧起坡点前的宅前道路应朝向远离住宅侧找坡，坡度1%~3%",
+      "note": "",
+      "id": "mn38oz7obr15"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "室内空间",
+      "checklist": "上下层阳台外圈梁设置位置和高度应一致，避免影响下一层业主封包阳台；同一层阳台周边外梁高度也应保持一致，避免影响本层业主封包阳台。",
+      "note": "",
+      "id": "mn38oz7okkp0"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "室内空间",
+      "checklist": "下跃空间内不应出现明敷管线影响净高、使用舒适性的情况，当确需布置时，应靠墙边敷设或就近引出室外",
+      "note": "",
+      "id": "mn38oz7on83z"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "室内空间",
+      "checklist": "起居厅、餐厅、卧室及书房空间范围内，顶部正上方不应有突出的结构梁、混凝土构件及其他明露的管件",
+      "note": "",
+      "id": "mn38oz7o2kih"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "室内空间",
+      "checklist": "住宅套内除卧室、起居室、兼起居的卧室不得贴临电梯井道外，其它无论何种功能空间贴临电梯井道时，井道隔墙上均应设置隔声降噪措施；其它诸如书房、活动室等可能改造为卧室的功能空间，需设置采用砖砌隔墙、玻璃隔断及推拉门等物理分隔措施形成的独立衣帽间、储藏间等功能空间与其完全分隔开，以保证隔声降噪效果",
+      "note": "",
+      "id": "mn38oz7ny4z1"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "室内空间",
+      "checklist": "公共建筑中餐厅的排风口及厨房事故排风口不应贴临并朝向办公区可开启外窗",
+      "note": "",
+      "id": "mn38oz7n0ojo"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "室内空间",
+      "checklist": "门两侧墙厚不一致、门顶梁的厚度厚于墙体，导致门套无法安装",
+      "note": "",
+      "id": "mn38oz7njt87"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "屋面",
+      "checklist": "厨房烟气道出屋面高度低于周边女儿墙，导致套内排烟不畅",
+      "note": "",
+      "id": "mn38oz7n9rqu"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "空调",
+      "checklist": "外墙空调预留洞应充分考虑室内机与室外机位置就近设置，避免室内管线过长或安装不便，影响室内、室外观感和使用效果",
+      "note": "",
+      "id": "mn38oz7n8rkh"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "空调",
+      "checklist": "空调室外机应选择便于安装及维修位置，避免热风对周边住户影响、避免噪声振动（如飘窗顶板上的室外机振动造成的投诉）、自身能效保障（气流组织、散热合理）",
+      "note": "",
+      "id": "mn38oz7n8vcj"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "架空层",
+      "checklist": "住宅正投影下方的架空层内不得设置排风口",
+      "note": "",
+      "id": "mn38oz7nxsg7"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "公区",
+      "checklist": "建筑内各类出入口外门开启后，可开启门框范围内不应出现结构露梁",
+      "note": "",
+      "id": "mn38oz7ncvoe"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "公区",
+      "checklist": "建筑室内、外设置在人员经常通行区域用于挡水的截水沟，应首选缝隙式排水沟或其它隐蔽式排水设施，不应直接选用明露的排水篦子类截水沟",
+      "note": "",
+      "id": "mn38oz7m43x4"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "公区",
+      "checklist": "住宅建筑中各层公共电表箱不应正对户门",
+      "note": "",
+      "id": "mn38oz7mq7mk"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "公区",
+      "checklist": "建筑内通向电梯厅的防火门，为方便人员通行的便利性，应设计常开式防火门",
+      "note": "",
+      "id": "mn38oz7m1g1u"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "公区",
+      "checklist": "建筑首层疏散门的门内侧建筑标高不应低于该疏散门的门口建筑标高",
+      "note": "",
+      "id": "mn38oz7mx5if"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "公区",
+      "checklist": "住宅首层公共门厅、大堂不应与首层住宅有开窗的房间外墙距离过近，当必须平行布置时，凹口的净宽与净深之比应大于1:3且宽度大于1.20m，避免对视影响",
+      "note": "",
+      "id": "mn38oz7m7wvr"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "公区",
+      "checklist": "从贴对联、密码锁厚度、公区装修厚度角度综合考虑，住宅入户门合页一侧门垛土建宽度不应小于150，以避免门扇开启后角度不足90°",
+      "note": "",
+      "id": "mn38oz7m231d"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "公区",
+      "checklist": "车库通向电梯厅的主动线上出现较大高差且未设计坡道",
+      "note": "",
+      "id": "mn38oz7m7600"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "公区",
+      "checklist": "防火门门垛尺寸不应小于50mm，保证防火门把手不磕碰墙面及防火门扇能够90°开启",
+      "note": "",
+      "id": "mn38oz7mzjtt"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "公区",
+      "checklist": "公区消火栓端部紧贴垂直墙体，导致装修贴砖无法收口",
+      "note": "",
+      "id": "mn38oz7m9ei5"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "大堂",
+      "checklist": "地下大堂设置不合理，导致昭示性、便达性差",
+      "note": "",
+      "id": "mn38oz7mxti5"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "厨卫",
+      "checklist": "厨房布置不当导致橱柜实际利用率很低",
+      "note": "",
+      "id": "mn38oz7l5uwk"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "电梯",
+      "checklist": "当无机房电梯顶层贴临住宅时，应设计隔音措施并对电梯安装提出要求",
+      "note": "",
+      "id": "mn38oz7le6sg"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "大堂/电梯厅",
+      "checklist": "公区大堂、电梯厅内消火栓，电表箱及立管应暗装或装修遮蔽；大堂内管井门、清洁间门、工具间等门宜采用隐形门或预留装修条件进行隐蔽设计，除确有困难外还应开向非人行主要流线；公区大堂及通向电梯厅的通道内，地下车库通车道至电梯厅的光厅、候车区及其外侧至少一跨柱网范围内不应设置集水坑",
+      "note": "",
+      "id": "mn38oz7l11bk"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "电梯厅",
+      "checklist": "住宅首层电梯厅净高不应小于2.40m",
+      "note": "",
+      "id": "mn38oz7lylle"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "电梯厅",
+      "checklist": "地下电梯厅当与设用用房区域走道联通时，应在交接部位设置装修分隔设施，保证电梯厅的完整性及精装边界限定范围",
+      "note": "",
+      "id": "mn38oz7lmb30"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "电梯厅",
+      "checklist": "首层所有门（管井门除外）开启后不应影响电梯厅候梯人员",
+      "note": "",
+      "id": "mn38oz7l7q5d"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "电梯厅",
+      "checklist": "电梯厅内的电梯门、设备管井门、防火门、百叶等上口宜齐平，保证装修美观；管井门下口应齐平以方便踢脚线的统一设计、美观；除住宅建筑的标准层核心筒外，消火栓不应正对电梯门，同时应考虑隐藏处理；地下车库通车道至电梯厅的光厅、候车区及其外侧至少一跨柱网范围内不应设置消火栓；通向电梯厅的通道内，除非必要不应设置消火栓，确需设置时，应设置在隐蔽区域并考虑隐蔽处理。",
+      "note": "",
+      "id": "mn38oz7lrgiy"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "车库",
+      "checklist": "车库停车区域内，停车位划线范围内原则上不得设置集水坑检修盖板；\n当本防火分区/防火单元内，有明显更合理且不影响车位处或更低价值车位可用于布置集水坑且经给排水专委会认定可行时，集水坑不应布置在价值车位上，避免车位产权范围内由于集水坑影响车位品质问题而引发的投诉问题；\n当集水坑确定设在车位范围时，应设计为“大坑小口”形式。",
+      "note": "",
+      "id": "mn38oz7ll9wk"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "车库",
+      "checklist": "汽车坡道上设置的挡水截水沟，在地下及出地面段部分，均应与其周边的侧挡水槛、挡水板、结构挡墙共同形成连续且封闭的挡水构造设施",
+      "note": "",
+      "id": "mn38oz7lkycn"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "楼梯间",
+      "checklist": "地下大堂至首层楼梯的行走路径上不得布置集水坑盖板",
+      "note": "",
+      "id": "mn38oz7lruiu"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "走道",
+      "checklist": "户门并列且均外开时，门间墙宽度不宜小于0.4m",
+      "note": "",
+      "id": "mn38oz7lp6ch"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "车库",
+      "checklist": "人防区域进入地下单元大堂时应采用活门槛人防门",
+      "note": "",
+      "id": "mn38oz7kr383"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "车库",
+      "checklist": "包括住宅建筑、公共建筑在内的各类型建筑地下车库中，结构柱不应影响停车位处车门开启，柱子背车道侧距停车位前端距离不大于1.3m",
+      "note": "",
+      "id": "mn38oz7k9kox"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "车库",
+      "checklist": "地下消防水池不应与大堂、楼梯间等公共场所及储藏室等其他场所直接毗邻，如无法避开，应采用双墙分隔，中间空气间层宜≮0.6m,具体根据水池位置和对周边的影响情况确定",
+      "note": "",
+      "id": "mn38oz7k14rv"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "车库",
+      "checklist": "消火栓、防火卷帘导轨、开启后的人防门不应挤占停车位空间",
+      "note": "",
+      "id": "mn38oz7ksoan"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "车库",
+      "checklist": "防火卷帘导轨、开启后的人防门不应挤占停车位空间",
+      "note": "",
+      "id": "mn38oz7kpbnb"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "外立面",
+      "checklist": "外窗开启扇位置和尺寸设置合理，便于开启和使用",
+      "note": "",
+      "id": "mn38oz7kqr48"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "车库",
+      "checklist": "除确有困难外，地下室进入核心筒的管线布置应避免穿越入户大堂",
+      "note": "",
+      "id": "mn38oz7kqm5m"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "外立面",
+      "checklist": "设备及管线位置隐蔽合理，避免设置在视线敏感部位，楼栋入口外立面无管线，如需设置管线则颜色应与建筑主体协调，外露管道颜色同墙漆，竖向通线顺直。",
+      "note": "",
+      "id": "mn38oz7k6ifo"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "外立面",
+      "checklist": "变形缝常采用铁皮或者铝合金饰面处理，外表面喷涂同墙色的涂料。变形缝两边的建筑之间，风格要一致、线条要连贯、高低错落时，衔接要合理。",
+      "note": "",
+      "id": "mn38oz7kw7nh"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "设备平台",
+      "checklist": "空调机位大小尺寸应结合空调机型确定，并考虑排水立管对空调机位安装的影响，立管严禁遮挡空调洞口",
+      "note": "",
+      "id": "mn38oz7kjasg"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "设备平台",
+      "checklist": "空调机位应便于后期使用、安装的及维修",
+      "note": "",
+      "id": "mn38oz7kwz4z"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "阳台",
+      "checklist": "穿阳台空调套管预留位置不合理，致使冷媒管在阳台敷设过长或安装不变并影响阳台使用",
+      "note": "",
+      "id": "mn38oz7k3zuh"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "车库",
+      "checklist": "平行设置的坡道与行车道水平间距不应小于5.5m",
+      "note": "",
+      "id": "mn38oz7kj1rc"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "厨卫",
+      "checklist": "烟气道及排水立管与外窗贴临时，应保证预留出装修包管（道）后宽度不小于0.05m的贴砖内装修厚度",
+      "note": "",
+      "id": "mn38oz7kswah"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "厨卫",
+      "checklist": "公共建筑中厨房操作区属于涉水频繁区域，不应设落地窗，外窗下应设置高出建筑完成面不小于0.25m的反槛",
+      "note": "",
+      "id": "mn38oz7kvtfm"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "通用",
+      "checklist": "避免门窗开启碰撞或不能同时开启",
+      "note": "",
+      "id": "mn38oz7j4oms"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "通用",
+      "checklist": "应考虑相邻户型之间的卫生视线，保证隐私",
+      "note": "",
+      "id": "mn38oz7jfi4r"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "屋面",
+      "checklist": "屋面设备机房或水箱布置应避免对顶层住户的噪声和振动影响",
+      "note": "",
+      "id": "mn38oz7j92f1"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "集团"
+      ],
+      "name": "核心筒",
+      "checklist": "向外开启的户门不应妨碍公共交通，不应遮挡相邻户门和电梯门。",
+      "note": "",
+      "id": "mn38oz7jxqj5"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "厨卫",
+      "checklist": "卫生间设计为干湿分区时，盥洗台干区应设置有效的挡水及防水设施",
+      "note": "",
+      "id": "mn38oz7jueej"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "厨卫",
+      "checklist": "卫生间设备管道、预留排气口下沿距窗上口不小于0.10m",
+      "note": "",
+      "id": "mn38oz7jd8up"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "厨卫",
+      "checklist": "厨房或卫生间内各类横、立管不应遮挡外墙预留洞，各类立管不应遮挡电气点位",
+      "note": "",
+      "id": "mn38oz7je3sj"
+    },
+    {
+      "category": "品质类问题",
+      "specialty": "暖通",
+      "region": [
+        "区域"
+      ],
+      "name": "厨卫",
+      "checklist": "厨房外窗开启扇过低，影响洗涤池、案台正常使用",
+      "note": "",
+      "id": "mn38oz6x38m4"
+    }
+  ],
+  "members": [
+    {
+      "name": "杨定伟",
+      "position": "",
+      "department": "暖通室",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "id": "mn2uix54tm29",
+      "createTime": "2026/3/23 15:10:07"
+    },
+    {
+      "name": "侯幸",
+      "position": "",
+      "department": "暖通室",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "id": "mn2uisgjrfh0",
+      "createTime": "2026/3/23 15:10:01"
+    },
+    {
+      "name": "李云飞",
+      "position": "",
+      "department": "暖通室",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "id": "mn2uiob42j5w",
+      "createTime": "2026/3/23 15:09:55"
+    },
+    {
+      "name": "王莹",
+      "position": "",
+      "department": "暖通室",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "id": "mn2uijouul47",
+      "createTime": "2026/3/23 15:09:49"
+    },
+    {
+      "name": "程晓光",
+      "position": "",
+      "department": "暖通室",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "id": "mn2uifyfzv06",
+      "createTime": "2026/3/23 15:09:45"
+    },
+    {
+      "name": "张立杰",
+      "position": "",
+      "department": "暖通室",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "id": "mn2uiblc318i",
+      "createTime": "2026/3/23 15:09:39"
+    },
+    {
+      "name": "李志鹏",
+      "position": "",
+      "department": "暖通室",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "id": "mn2ui6xc8nxm",
+      "createTime": "2026/3/23 15:09:33"
+    },
+    {
+      "name": "冯永斌",
+      "position": "",
+      "department": "暖通室",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "id": "mn2uhyrxkfvj",
+      "createTime": "2026/3/23 15:09:22"
+    }
+  ],
   "branches": [],
   "accounts": [
     {
@@ -19,7 +1124,7 @@
     {
       "username": "chengxiaoguang",
       "passwordHash": "c6c831e70e36be195d395913f346c521d825b67930f23b6006989a6de970068f",
-      "realname": "ç¨æå",
+      "realname": "Ã§Â¨ÂÃ¦ÂÂÃ¥ÂÂ",
       "role": "user",
       "department": "",
       "note": "",
