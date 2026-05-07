@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "exportTime": "2026/5/7 16:51:03",
+  "exportTime": "2026/5/7 16:59:12",
   "companies": [
     {
       "name": "西安第五事业部",
@@ -367,13 +367,12 @@
     },
     {
       "username": "admin",
-      "password": "a15802919145",
-      "displayName": "程晓光",
+      "pinyin": "",
       "role": "admin",
       "companyId": "",
-      "id": "mov4hvpast20",
-      "createTime": "2026/5/7 14:46:30",
-      "memberId": "mov4ic3alvfd"
+      "memberId": "mov4ic3alvfd",
+      "password": "a15802919145",
+      "id": "mov4hvpast20"
     }
   ],
   "projects": [
