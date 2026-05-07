@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "exportTime": "2026/5/7 18:57:05",
+  "exportTime": "2026/5/7 18:59:05",
   "companies": [
     {
       "name": "西安第五事业部",
@@ -180,7 +180,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac1mvogwo",
-      "memberId": "movag2ynfrq1",
+      "memberId": "mov4ic3bcfh0",
       "password": "123456",
       "id": "movad7d49dor"
     },
@@ -189,7 +189,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac1mvogwo",
-      "memberId": "movag2ynnwfa",
+      "memberId": "mov4ic3b3pxt",
       "password": "123456",
       "id": "movad7d47tbg"
     },
@@ -198,7 +198,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac1mvogwo",
-      "memberId": "movag2ynina3",
+      "memberId": "mov4ic3b6jp9",
       "password": "123456",
       "id": "movad7d4yy33"
     },
@@ -207,7 +207,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac1mvogwo",
-      "memberId": "movag2ync8uf",
+      "memberId": "mov4ic3bahhm",
       "password": "123456",
       "id": "movad7d4ee1z"
     },
@@ -216,7 +216,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac1mvogwo",
-      "memberId": "movag2ynria4",
+      "memberId": "mov4ic3bosns",
       "password": "123456",
       "id": "movad7d4e0bw"
     },
@@ -225,7 +225,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac1mvogwo",
-      "memberId": "movag2ynfnq8",
+      "memberId": "mov4ic3b0j2n",
       "password": "123456",
       "id": "movad7d4ib5a"
     },
@@ -234,7 +234,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movaby4hoeco",
-      "memberId": "movag2ynaoua",
+      "memberId": "mov4ic3bfpvy",
       "password": "123456",
       "id": "movad7d406lb"
     },
@@ -243,7 +243,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movaby4hoeco",
-      "memberId": "movag2yn9mz0",
+      "memberId": "mov4ic3bkj1m",
       "password": "123456",
       "id": "movad7d44tft"
     },
@@ -252,7 +252,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movaby4hoeco",
-      "memberId": "movag2yn643l",
+      "memberId": "mov4ic3bmjcl",
       "password": "123456",
       "id": "movad7d4m484"
     },
@@ -261,7 +261,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movaby4hoeco",
-      "memberId": "movag2ym7ks7",
+      "memberId": "mov4ic3bz7q9",
       "password": "123456",
       "id": "movad7d45jai"
     },
@@ -270,7 +270,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movaby4hoeco",
-      "memberId": "movag2ymgadz",
+      "memberId": "mov4ic3aghf7",
       "password": "123456",
       "id": "movad7d49oyt"
     },
@@ -279,7 +279,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movaby4hoeco",
-      "memberId": "movag2ymkjin",
+      "memberId": "mov4ic3awjtk",
       "password": "123456",
       "id": "movad7d46l5p"
     },
@@ -288,7 +288,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movaby4hoeco",
-      "memberId": "movag2ym9d3m",
+      "memberId": "mov4ic3a3837",
       "password": "123456",
       "id": "movad7d4ol1c"
     },
@@ -297,7 +297,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movabv43fh9e",
-      "memberId": "movag2ymsaw8",
+      "memberId": "mov4ic3aqbes",
       "password": "123456",
       "id": "movad7d4t03w"
     },
@@ -306,7 +306,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movabv43fh9e",
-      "memberId": "movag2ymw0nw",
+      "memberId": "mov4ic3adaor",
       "password": "123456",
       "id": "movad7d43ufp"
     },
@@ -315,7 +315,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movabv43fh9e",
-      "memberId": "movag2ymyoyl",
+      "memberId": "mov4ic3avaie",
       "password": "123456",
       "id": "movad7d4o7hc"
     },
@@ -324,7 +324,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movabv43fh9e",
-      "memberId": "movag2ymk7pw",
+      "memberId": "mov4ic3ar9pn",
       "password": "123456",
       "id": "movad7d457f5"
     },
@@ -333,18 +333,9 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movabv43fh9e",
-      "memberId": "movag2ympv6h",
+      "memberId": "mov4ic3ayw6g",
       "password": "123456",
       "id": "movad7d4l91a"
-    },
-    {
-      "username": "admin1",
-      "password": "a15802919145",
-      "role": "admin",
-      "companyId": "mova9mk3m8h7",
-      "memberId": "",
-      "id": "mova9mkeroqv",
-      "createTime": "2026/5/7 17:28:02"
     },
     {
       "username": "admin",
