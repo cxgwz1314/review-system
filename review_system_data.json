@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "exportTime": "2026/5/7 18:02:21",
+  "exportTime": "2026/5/7 18:57:05",
   "companies": [
     {
       "name": "西安第五事业部",
@@ -45,7 +45,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movabv43fh9e",
-      "memberId": "movag2ypdtc2",
+      "memberId": "mov4ic3dyqeh",
       "password": "123456",
       "id": "movad7d5hdug"
     },
@@ -54,7 +54,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac8pqkvw3",
-      "memberId": "movag2yon0ey",
+      "memberId": "mov4ic3d3klt",
       "password": "123456",
       "id": "movad7d5x165"
     },
@@ -63,7 +63,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac8pqkvw3",
-      "memberId": "movag2yobgbk",
+      "memberId": "mov4ic3d4vwo",
       "password": "123456",
       "id": "movad7d5b5ld"
     },
@@ -72,7 +72,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac8pqkvw3",
-      "memberId": "movag2yoh4dw",
+      "memberId": "mov4ic3cuxmc",
       "password": "123456",
       "id": "movad7d5z23g"
     },
@@ -81,7 +81,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac8pqkvw3",
-      "memberId": "movag2yot8td",
+      "memberId": "mov4ic3czj07",
       "password": "123456",
       "id": "movad7d51h6e"
     },
@@ -90,7 +90,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac5n1wfvj",
-      "memberId": "movag2yos55s",
+      "memberId": "mov4ic3cqyuw",
       "password": "123456",
       "id": "movad7d5a7sd"
     },
@@ -99,7 +99,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac5n1wfvj",
-      "memberId": "movag2yoz4yp",
+      "memberId": "mov4ic3c5db9",
       "password": "123456",
       "id": "movad7d5g6lp"
     },
@@ -108,7 +108,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac5n1wfvj",
-      "memberId": "movag2yojbea",
+      "memberId": "mov4ic3cy1th",
       "password": "123456",
       "id": "movad7d5ek51"
     },
@@ -117,7 +117,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac5n1wfvj",
-      "memberId": "movag2yojxny",
+      "memberId": "mov4ic3ck8ha",
       "password": "123456",
       "id": "movad7d5cai2"
     },
@@ -126,7 +126,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac5n1wfvj",
-      "memberId": "movag2yowsmv",
+      "memberId": "mov4ic3cj75m",
       "password": "123456",
       "id": "movad7d52kq9"
     },
@@ -135,7 +135,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac5n1wfvj",
-      "memberId": "movag2yourrz",
+      "memberId": "mov4ic3cz7wn",
       "password": "123456",
       "id": "movad7d5kfu4"
     },
@@ -144,7 +144,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac5n1wfvj",
-      "memberId": "movag2yntjh2",
+      "memberId": "mov4ic3b65zj",
       "password": "123456",
       "id": "movad7d5rc9z"
     },
@@ -153,7 +153,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac5n1wfvj",
-      "memberId": "movag2ynvftb",
+      "memberId": "mov4ic3b072i",
       "password": "123456",
       "id": "movad7d55e97"
     },
@@ -162,7 +162,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac1mvogwo",
-      "memberId": "movag2ynb1qe",
+      "memberId": "mov4ic3bpkdz",
       "password": "123456",
       "id": "movad7d5wv7t"
     },
@@ -171,7 +171,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac1mvogwo",
-      "memberId": "movag2ynuuej",
+      "memberId": "mov4ic3b3mth",
       "password": "123456",
       "id": "movad7d4xpxc"
     },
@@ -1748,17 +1748,6 @@
       "email": "",
       "note": "",
       "id": "mov4ic3ayw6g",
-      "createTime": "2026/5/7 14:46:51"
-    },
-    {
-      "name": "程晓光",
-      "companyId": "mov0noqh1bt4",
-      "departmentId": "",
-      "position": "",
-      "phone": "",
-      "email": "",
-      "note": "",
-      "id": "mov4ic3alvfd",
       "createTime": "2026/5/7 14:46:51"
     }
   ],
