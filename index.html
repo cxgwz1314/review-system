@@ -708,7 +708,7 @@
                 </div>
                 <div class="tbl-wrapper">
                     <table class="tbl">
-                        <thead><tr><th style="width:32px"><input type="checkbox" onchange="AccountMgr.toggleAll(this)" style="cursor:pointer" title="全选"></th><th>编号</th><th>账号</th><th>拼音</th><th>姓名</th><th>角色</th><th>所属分公司</th><th>关联人员</th><th>创建时间</th><th>操作</th></tr></thead>
+                        <thead><tr><th style="width:32px"><input type="checkbox" onchange="AccountMgr.toggleAll(this)" style="cursor:pointer" title="全选"></th><th>编号</th><th>账号</th><th>密码</th><th>拼音</th><th>姓名</th><th>角色</th><th>所属分公司</th><th>关联人员</th><th>创建时间</th><th>操作</th></tr></thead>
                         <tbody id="accountsTbody"></tbody>
                     </table>
                 </div>
@@ -1542,7 +1542,24 @@
    数据层：本地存储 + 云同步（可选）
    ============================================= */
 const Store = {
-    _get(key) { try { return JSON.parse(localStorage.getItem('review_' + key) || '[]'); } catch(e){ return []; } },
+    // 乱码检测正则（Latin-1 残渣字符）
+    _GARBLED_RE: /[ãçâ€""''™®©§¶£¢]/,
+    _get(key) {
+        try {
+            const raw = localStorage.getItem('review_' + key) || '[]';
+            const data = JSON.parse(raw);
+            // 每次读取数据时自动检测并清理乱码
+            if (typeof data === 'object' && data !== null) {
+                const str = JSON.stringify(data);
+                if (Store._GARBLED_RE.test(str)) {
+                    const cleaned = GithubSync._sanitizeStrings(data);
+                    localStorage.setItem('review_' + key, JSON.stringify(cleaned));
+                    return cleaned;
+                }
+            }
+            return data;
+        } catch(e){ return []; }
+    },
     _set(key, data) { localStorage.setItem('review_' + key, JSON.stringify(data)); },
     _log(action, item) {
         const logs = Store._get('activity');
@@ -1911,6 +1928,8 @@ const Auth = {
         document.getElementById('loginModal').style.display = 'block';
         document.getElementById('loginUsername').value = '';
         document.getElementById('loginPassword').value = '';
+        // 重新填充分公司下拉（注册后可能有新公司）
+        Auth.fillLoginCompanySelect();
         document.getElementById('loginUsername').focus();
     }
 };
@@ -2984,9 +3003,18 @@ const App = {
         const session = Auth.getSession();
         if (session && session.role !== 'admin') {
             const cid = String(session.companyId || '');
-            const allowedProjectIds = projects.filter(p => String(p.companyId || '') === cid).map(p => p.id);
-            plans = plans.filter(pl => allowedProjectIds.includes(pl.projectId));
-            projects = projects.filter(p => String(p.companyId || '') === cid);
+            // 允许的分公司项目（按 companyId 或按名称匹配）
+            const allowedProjects = projects.filter(p => String(p.companyId || '') === cid);
+            const allowedProjectIds = allowedProjects.map(p => p.id);
+            const allowedProjectNames = allowedProjects.map(p => p.name);
+            plans = plans.filter(pl => {
+                // 按 projectId 精确匹配
+                if (pl.projectId && allowedProjectIds.includes(pl.projectId)) return true;
+                // 兼容旧数据：按 project 名称匹配
+                if (pl.project && allowedProjectNames.includes(pl.project)) return true;
+                return false;
+            });
+            projects = allowedProjects;
         }
         
         const tbody = document.getElementById('plansTbody');
@@ -3306,7 +3334,7 @@ const App = {
     renderAccounts() {
         const accounts = Store.getAccounts();
         const tbody = document.getElementById('accountsTbody');
-        if (accounts.length === 0) { tbody.innerHTML = emptyRow(9, '暂无账号，点击右上角「新增账号」开始添加'); return; }
+        if (accounts.length === 0) { tbody.innerHTML = emptyRow(11, '暂无账号，点击右上角「新增账号」开始添加'); return; }
         tbody.innerHTML = accounts.map((a, i) => {
             const company = a.companyId ? Store.getCompanyById(a.companyId) : null;
             const member = a.memberId ? Store.getMembers().find(m => m.id === a.memberId) : null;
@@ -3315,6 +3343,7 @@ const App = {
                 <td><input type="checkbox" class="acct-batch-chk" data-id="${a.id}" onchange="AccountMgr.toggleBatchSel()" style="cursor:pointer"></td>
                 <td>A${String(i+1).padStart(3,'0')}</td>
                 <td><strong>${a.username||'—'}</strong></td>
+                <td><code style="background:#f5f5f5;padding:2px 6px;border-radius:4px;font-size:12px">${a.password||'—'}</strong></td>
                 <td>${pinyinTag}</td>
                 <td>${member ? member.name : '—'}</td>
                 <td>${a.role === 'admin' ? '<span class="tag tag-red">管理员</span>' : '<span class="tag tag-blue">员工</span>'}</td>
