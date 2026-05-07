@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "exportTime": "2026/5/7 16:33:44",
+  "exportTime": "2026/5/7 16:51:03",
   "companies": [
     {
       "name": "西安第五事业部",
@@ -1785,20 +1785,20 @@
   "issues": [
     {
       "planId": "mn2y24eiwqfe",
-      "projectName": "æ³å²¸åé½å­æé¡¹ç®",
-      "description": "ç©ºè°å¤æºä½å½±åä½æ·",
-      "reviewer": "å¼ ç«æ°",
-      "severity": "åè´¨ç±»",
+      "projectName": "柳岸华都六期项目",
+      "description": "空调外机位影响住户",
+      "reviewer": "张立杰",
+      "severity": "品质类",
       "status": "å¾æ´æ¹",
       "id": "mouwpknd4tku",
       "createTime": "2026/5/7 11:08:32"
     },
     {
       "planId": "mn2yeb5uiesb",
-      "projectName": "æ³å²¸åé½å­æé¡¹ç®",
-      "description": "å¥ç®¡ä¸ç«é¢å²çª",
-      "reviewer": "ç¨æå",
-      "severity": "åè´¨ç±»",
+      "projectName": "柳岸华都六期项目",
+      "description": "套管与立面冲突",
+      "reviewer": "程晓光",
+      "severity": "品质类",
       "status": "å¾æ´æ¹",
       "id": "mouwoumapgtm",
       "createTime": "2026/5/7 11:07:58"
