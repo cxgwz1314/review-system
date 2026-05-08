@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "exportTime": "2026/5/8 14:51:53",
+  "exportTime": "2026/5/8 22:01:57",
   "companies": [
     {
       "name": "西安第五事业部",
@@ -45,7 +45,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movabv43fh9e",
-      "memberId": "mov4ic3dyqeh",
+      "memberId": "movdivhe0536",
       "password": "123456",
       "id": "movad7d5hdug"
     },
@@ -54,7 +54,7 @@
       "pinyin": "",
       "role": "employee",
       "companyId": "movac8pqkvw3",
-      "memberId": "mov4ic3d3klt",
+      "memberId": "movdivhev0ih",
       "password": "123456",
       "id": "movad7d5x165"
     },
@@ -1739,17 +1739,6 @@
       "email": "",
       "note": "",
       "id": "movdivh9pel0",
-      "createTime": "2026/5/7 18:59:13"
-    },
-    {
-      "name": "程晓光",
-      "companyId": "movac5n1wfvj",
-      "departmentId": "",
-      "position": "",
-      "phone": "",
-      "email": "",
-      "note": "",
-      "id": "movdivh9y26i",
       "createTime": "2026/5/7 18:59:13"
     }
   ],
