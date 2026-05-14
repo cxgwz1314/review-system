@@ -499,9 +499,14 @@
             <i class="fas fa-sign-in-alt"></i> 登录
         </button>
         <div style="text-align:center;margin-top:12px">
-            <a href="javascript:void(0)" onclick="Auth.openChangePwd()" style="color:#1565c0;font-size:13px;text-decoration:none;">
-                <i class="fas fa-key"></i> 忘记密码？修改密码
-            </a>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+                <button type="button" class="btn btn-text" onclick="Auth.openChangePwd()" style="color:#1565c0;font-size:13px;text-decoration:none;background:none;border:none;cursor:pointer;padding:0;">
+                    <i class="fas fa-key"></i> 忘记密码？修改密码
+                </button>
+                <button type="button" class="btn btn-text" onclick="Auth.resetAdminPassword()" style="color:#888;font-size:12px;text-decoration:none;background:none;border:none;cursor:pointer;padding:0;">
+                    <i class="fas fa-undo"></i> 重置管理员密码
+                </button>
+            </div>
         </div>
         <div class="login-tip" id="loginTip" style="display:none;margin-top:12px">
             <i class="fas fa-info-circle"></i>
@@ -918,6 +923,7 @@
     <div class="modal" style="max-width:400px">
         <h3><i class="fas fa-key" style="color:#1565c0;margin-right:8px"></i>修改密码</h3>
         <div id="changePwdError" style="display:none;color:#e53935;background:#ffebee;border-radius:6px;padding:8px 12px;margin-bottom:12px;font-size:13px;"></div>
+
         <div class="form-group" id="cpAccountGroup" style="display:none">
             <label class="form-label">账号</label>
             <input class="form-control" id="cpAccount" placeholder="请输入要修改的账号" autocomplete="username">
@@ -941,7 +947,31 @@
     </div>
 </div>
 
-<!-- ===== 模态框：新建/编辑账号 ===== -->
+<!-- ===== 弹窗：新电脑首次登录引导 ===== -->
+<div class="overlay" id="overlayNewDevice" style="display:none;z-index:3000">
+    <div class="modal" style="max-width:460px">
+        <h3><i class="fas fa-cloud-download-alt" style="color:#1565c0;margin-right:8px"></i>欢迎使用专项校审管理系统</h3>
+        <div style="background:#e3f2fd;border-radius:8px;padding:14px 16px;margin-bottom:16px;font-size:13px;color:#1565c0;line-height:1.7">
+            <i class="fas fa-info-circle"></i> 检测到本设备尚无系统数据。<br>
+            如果您的管理员已在其他设备上使用并同步了数据，请填写仓库地址下载最新数据，之后即可正常使用全部功能。
+        </div>
+        <div class="form-group">
+            <label class="form-label">GitHub 仓库地址 <span style="color:red">*</span></label>
+            <input class="form-control" id="ndRepoInput" placeholder="如：cxgwz1314/review-system（Owner/Repo）" value="cxgwz1314/review-system">
+        </div>
+        <div style="color:#888;font-size:12px;margin-bottom:16px;">
+            <i class="fas fa-question-circle"></i> 不知道填什么？请联系您的系统管理员获取仓库地址。
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-outline" onclick="Auth.closeNewDeviceGuide()">稍后再说</button>
+            <button class="btn btn-primary" onclick="Auth.quickDownloadFromGithub()">
+                <i class="fas fa-download"></i> 立即下载数据
+            </button>
+        </div>
+    </div>
+</div>
+
+
 <div class="overlay" id="overlayAccount">
     <div class="modal">
         <h3 id="accountModalTitle">新增账号</h3>
@@ -1605,7 +1635,7 @@ const Store = {
     getAccounts() { 
         const accounts = Store._get('accounts');
         // 首次使用，自动创建内置管理员账号
-        if (accounts.length === 0) {
+        if (!Array.isArray(accounts) || accounts.length === 0) {
             const defaultAdmin = {
                 id: 'admin_default',
                 username: 'admin',
@@ -1616,6 +1646,7 @@ const Store = {
                 createTime: new Date().toLocaleString()
             };
             Store._set('accounts', [defaultAdmin]);
+            console.log('首次使用，已创建默认管理员账号：admin / a15802919145');
             return [defaultAdmin];
         }
         return accounts;
@@ -1728,7 +1759,12 @@ const Auth = {
         
         const account = Store.getAccountByUsername(username);
         if (!account) { errorEl.textContent = '账号不存在'; errorEl.style.display = 'block'; return; }
-        if (account.password !== password) { errorEl.textContent = '密码错误'; errorEl.style.display = 'block'; return; }
+        if (account.password !== password) { 
+            console.log('登录失败：密码不匹配', {输入的密码: password, 账号密码: account.password, 账号: username});
+            errorEl.textContent = '密码错误'; 
+            errorEl.style.display = 'block'; 
+            return; 
+        }
         
         // 员工必须选择分公司
         if (account.role === 'employee' && !companyId) {
@@ -1756,6 +1792,9 @@ const Auth = {
                 Toast.ok('🔔 请前往「系统设置」修改默认密码（admin / a15802919145）');
             }, 1500);
         }
+
+        // 新电脑检测：如果无任何数据，引导从 GitHub 下载
+        Auth.checkAndGuideDataDownload();
     },
     
     // 退出登录
@@ -1953,6 +1992,89 @@ const Auth = {
         // 重新填充分公司下拉（注册后可能有新公司）
         Auth.fillLoginCompanySelect();
         document.getElementById('loginUsername').focus();
+    },
+
+    // 重置管理员密码为默认
+    resetAdminPassword() {
+        if (!confirm('确定将管理员密码重置为默认值吗？\n\n账号：admin\n默认密码：a15802919145')) return;
+        
+        const accounts = Store.getAccounts();
+        const idx = accounts.findIndex(a => a.username === 'admin');
+        
+        if (idx !== -1) {
+            accounts[idx].password = 'a15802919145';
+            Store._set('accounts', accounts);
+        } else {
+            // 如果admin不存在，创建默认账号
+            accounts.push({
+                id: 'admin_default',
+                username: 'admin',
+                password: 'a15802919145',
+                name: '系统管理员',
+                role: 'admin',
+                companyId: '',
+                createTime: new Date().toLocaleString()
+            });
+            Store._set('accounts', accounts);
+        }
+        
+        Toast.ok('管理员密码已重置为：a15802919145');
+        console.log('管理员密码已重置');
+    },
+
+    // 新电脑首次登录检测：若无任何业务数据，弹出引导下载弹窗
+    checkAndGuideDataDownload() {
+        const projects = Store.getProjects();
+        const plans    = Store.getPlans();
+        const members  = Store.getMembers();
+        const isEmpty  = projects.length === 0 && plans.length === 0 && members.length === 0;
+        if (!isEmpty) return; // 有数据，不提示
+
+        // 延迟弹出，避免和登录动画冲突
+        setTimeout(() => {
+            document.getElementById('overlayNewDevice').style.display = 'flex';
+        }, 800);
+    },
+
+    closeNewDeviceGuide() {
+        document.getElementById('overlayNewDevice').style.display = 'none';
+    },
+
+    // 新电脑：使用仓库地址直接下载数据（无需 Token）
+    quickDownloadFromGithub() {
+        const repoInput = document.getElementById('ndRepoInput');
+        const repo = repoInput ? repoInput.value.trim() : '';
+        if (!repo) { Toast.err('请输入仓库地址，如：cxgwz1314/review-system'); return; }
+
+        const [owner, repoName] = repo.split('/');
+        if (!owner || !repoName) { Toast.err('格式有误，请输入 Owner/Repo，如：cxgwz1314/review-system'); return; }
+
+        // 尝试多个文件名
+        const candidates = ['review_system_data.json', 'shared_data.json'];
+        const branch = 'main';
+
+        const tryNext = (idx) => {
+            if (idx >= candidates.length) {
+                Toast.err('未找到共享数据文件，请联系管理员确认 GitHub 仓库和文件名');
+                return;
+            }
+            const file = candidates[idx];
+            const url = `https://raw.githubusercontent.com/${owner}/${repoName}/${branch}/${file}`;
+            Toast.info('正在下载 ' + file + '…');
+            fetch(url)
+                .then(r => {
+                    if (!r.ok) { tryNext(idx + 1); return null; }
+                    return r.json();
+                })
+                .then(data => {
+                    if (!data) return;
+                    GithubSync._importData(data);
+                    Auth.closeNewDeviceGuide();
+                    Toast.ok('数据下载成功！页面即将刷新');
+                })
+                .catch(() => tryNext(idx + 1));
+        };
+        tryNext(0);
     }
 };
 
@@ -2349,23 +2471,38 @@ const GithubSync = {
     },
 
     _importData(data) {
-        // 保护性导入：保留当前用户的账号和会话不变
+        // 保留当前会话（不中断登录状态）
         const currentSession = localStorage.getItem('review_session');
-        const currentAccounts = localStorage.getItem('review_accounts');
 
-        if (data.companies)   this._safeSave('review_companies',   data.companies);
-        if (data.departments) this._safeSave('review_departments', data.departments);
-        if (data.projects)    this._safeSave('review_projects',    data.projects);
-        if (data.plans)       this._safeSave('review_plans',      data.plans);
-        if (data.reviewPoints) this._safeSave('review_points',    data.reviewPoints);
-        if (data.members)     this._safeSave('review_members',   data.members);
-        // 账号：始终保留本地账号（不覆盖）
-        // 会话：始终保留当前会话（不覆盖）
-        if (data.issues)       this._safeSave('review_issues',     data.issues);
+        if (data.companies)    this._safeSave('review_companies',   data.companies);
+        if (data.departments)  this._safeSave('review_departments', data.departments);
+        if (data.projects)     this._safeSave('review_projects',    data.projects);
+        if (data.plans)        this._safeSave('review_plans',       data.plans);
+        if (data.reviewPoints) this._safeSave('review_points',      data.reviewPoints);
+        if (data.members)      this._safeSave('review_members',     data.members);
+        if (data.issues)       this._safeSave('review_issues',      data.issues);
 
-        // 恢复账号和会话
+        // 账号同步：将 GitHub 上的账号合并到本地
+        // 策略：以 GitHub 数据为准（覆盖），但始终保留内置 admin 账号
+        if (data.accounts && Array.isArray(data.accounts)) {
+            const localRaw = localStorage.getItem('review_accounts');
+            const localAccounts = localRaw ? JSON.parse(localRaw) : [];
+
+            // 找出本地有、但 GitHub 无的账号（仅保留内置 admin）
+            const localOnlyAdmin = localAccounts.find(a => a.id === 'admin_default' || a.username === 'admin');
+            
+            // 合并：以 GitHub 账号为主体，若 GitHub 中无 admin 则补入本地 admin
+            let merged = [...data.accounts];
+            const githubHasAdmin = merged.some(a => a.username === 'admin');
+            if (!githubHasAdmin && localOnlyAdmin) {
+                merged.unshift(localOnlyAdmin);
+            }
+
+            this._safeSave('review_accounts', merged);
+        }
+
+        // 恢复会话（保证登录状态不中断）
         if (currentSession) localStorage.setItem('review_session', currentSession);
-        if (currentAccounts) localStorage.setItem('review_accounts', currentAccounts);
 
         if (App && App.refresh) App.refresh();
         else location.reload();
